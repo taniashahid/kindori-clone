@@ -82,7 +82,7 @@
 
 .dropdown:hover .dropdown-menu{
     display: block;
-    margin-top: 14px;
+    margin-top: 12px;
 }
 
 .dropdown-menu::after{
@@ -98,13 +98,14 @@
 }
 
 .dropdown-menu li{
-    padding: 8px 16px;
+    padding: 8px 12px;
+    
 }
 
 
 .navbar-nav .nav-item .nav-link{
-    font-size: 18px;
-    padding: 0 24px;
+    font-size: 16px;
+    padding: 0 32px;
     position: relative;
     line-height: 32px;
     display: block;
@@ -113,7 +114,7 @@
 
 .home .nav-link{
     background-color: var(--secondary);
-    border-radius: 6px;
+    border-radius: 4px;
 
 
 }
@@ -121,7 +122,7 @@
 
 .navbar-nav .nav-item .nav-link:hover{
     background-color: var(--secondary);
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 
@@ -132,7 +133,7 @@
 
 .search-btn {
     
-    padding: 2px;
+    padding: 4px;
     border-radius: 50%;
     border: #ff4880 dashed 2px;
 }
@@ -141,81 +142,107 @@
     background-color: var(--secondary);
     color: #fff;
     display: inline-block;
-    padding: 9px 16px;
+    padding: 14px 16px;
     border-radius: 50%;
 }
 
-.hero-inner{
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    
+.animation .bird{
+    margin: 12px 0 0 16px;
 }
 
-.cloud{
-    margin-bottom: 100px;
+.bird{
+    animation-name: up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
 }
 
-.cloud img{
-    vertical-align: middle;
-
+@keyframes up {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
 }
 
-
+.clouds{
+    animation-name: down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+@keyframes down {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
 
 .hero-wrapper{
     display: flex;
-    flex-direction: column; 
-    height: 848px;
-    justify-content: center;
+    flex-direction: column;
     background-image: url(../imgs/bg-home-top-section.png);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 848px;
-}
-  
-.hero-wrapper .hero-content h3 {
-    font-size: 24px;
-    font-family: 'Schoolbell', cursive;
-    color: var(--secondary);
-    letter-spacing: 2px;
-    margin-bottom: 14px;
-    
+    background-size: cover;
+    height: 756px;
 }
 
-.hero-wrapper .hero-content h2 {
-    font-size: 45px;
-    font-family: 'Fredoka', sans-serif;
+.hero-wrapper .hero-content h3{
+    font-family: 'Schoolbell' , cursive;
+    color: var(--secondary);
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 9px;
+}
+
+.hero-wrapper .hero-content h2{
+    font-family: 'fredoka' , sans-serif;
     color: var(--primary);
-    font-weight: 800;
+    font-weight: 600;
     text-transform: capitalize;
-    letter-spacing: 2px;
-    margin-bottom: 16px;
+    font-size: 50px;
+    margin: 12px 0;
 }
 
 .hero-wrapper .hero-content p{
-    font-size: 20px;
-    font-family: 'Fredoka', sans-serif;
-    margin: 16px 0;
-}
-
-.hero-wrapper .hero-content a{
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 12px;
     text-transform: capitalize;
-    border-radius: 12px;
-    border: 1px solid var(--secondary);
-    color: #fff;
-    background-color: var(--secondary);
-    padding: 8px 18px;
+    font-family: 'fredoka' , sans-serif;
+    font-size: 15px;
+    margin: 14px 0;
+    color: #777;
 }
 
-.hero-wrapper .hero-content a:hover{
-    border: none(transparent #fff);
+.hero-wrapper .hero-content .cover{
+    background-color: var(--secondary);
+    color: white;
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: all .2s ease-in-out;
+}
+
+.hero-wrapper .hero-content .cover:hover{
     background-color: var(--primary);
 }
+
+
+
+
+
 
 
 .mid-wrapper{
@@ -434,6 +461,40 @@ margin: 15px 0;
     margin: 15px 0;
     letter-spacing: 2px;
 }
+
+.activity-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.activity-content h3{
+    font-family: 'Schoolbell' , cursive;
+    font-size: 24px;
+    color: var(--primary);
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
+
+.activity-content p{
+    font-family:  'Fredoka', sans-serif;
+    text-align: left;
+    color: #777;
+}
+
+.activity-badge{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: dashed 2px var(--green);
+    padding: 3px;
+}
+
+.accordian-wrapper{
+    background-color: var(--primary);
+}
+
 
 .teachers{
     text-align: center;
