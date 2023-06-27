@@ -103,6 +103,14 @@
 }
 
 
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,5%);
+}
+
 .navbar-nav .nav-item .nav-link{
     font-size: 16px;
     padding: 0 32px;
@@ -374,7 +382,10 @@
     background-color: #fcf9f4;
 }
 
-
+.about_img{
+    width: 320px;
+    height: 390px;
+}
 
 .about_img {
     margin-bottom: 68px;
@@ -491,9 +502,237 @@ margin: 15px 0;
     padding: 3px;
 }
 
-.accordian-wrapper{
+.program .pro-bg {
+    background: url(../imgs/bg-video.webp) no-repeat bottom right;
+    background-size: cover;
+    padding-bottom: 0 !important;
+    width: 750px;
+  }
+  .program .pro-bg a{
+   margin-top:50%;
+   padding: 0%;
+   transition: all .5s ease;
+   width: fit-content;
+   height: fit-content;
+  }
+  .program .pro-bg a:hover{
+   margin-top:48%;
+  }
+  
+  .program .content {
     background-color: var(--primary);
+    width: 50%;
+    height: fit-content;
+    color: #fff;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  
+  }
+  
+  .program .content .container .top {
+    width: 40%;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  
+  .program .content .container .top h6 {
+    color: var(--secondary);
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: var(--italic-font);
+    margin-right: 10px;
+  }
+  
+  .program .content h1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  
+  .program .content p {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+  
+  
+  
+  
+  .accordion-header {
+   border-top-right-radius: 20px !important; 
+    border-top-left-radius: 20px !important; 
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+  }
+  
+  .accordion-button{
+  padding: 0%;
+  overflow: hidden;
+  padding-right: 12px;
+  }
+
+  .accordion-button>ul>li{
+    list-style: none;
+  }
+  .accordion-button>ul>li>h6{
+   font-weight: bolder;
+   font-size: 20px
+  }
+  .accordion-button>ul>li:first-child{
+    background-color:#ff2a6a13;
+    padding: 16px;
+  }
+  .accordion-button-2>ul>li:first-child{
+    background-color:#ffd1472c;
+  }
+  .accordion-button-3>ul>li:first-child{
+    background-color:#bcdf6424;
+  }
+  .accordion-button-4>ul>li:first-child{
+    background-color:#1abaff22;
+  }
+  .accordion-button>ul>li img{
+    width: 30px;
+  }
+  .accordion-button>ul>li:nth-child(2){
+   margin-top: 22px;
+   margin-left: 24px;
+  }
+  
+  
+  
+  .accordion-item:first-child {
+    border-top-right-radius: 20px !important; 
+     border-top-left-radius: 20px !important; 
+  }
+  .accordion-item:last-child {
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+  }
+  
+  
+  .accordion-button:focus {
+    background-color:transparent;
+  }
+  
+  .accordion-button:focus {
+    z-index: 3;
+    border-color:transparent !important;
+    border: transparent !important;
+    outline: 0;
+    box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+  }
+  
+  .accordion-button:not(.collapsed) { 
+    font-weight: bold;
+    background-color: transparent;
+  box-shadow: inset 0 0 0 0 !important  ;
+  }
+  
+  
+  .accordion-item:first-of-type .accordion-button {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(../imgs/p-cross.png);
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  .accordion-button::after {
+    background-image: url(../imgs/p-plus.png);
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  .accordion-button-2:not(.collapsed)::after {
+    background-image: url(../imgs/y-cross.png);
+  }
+  .accordion-button-2::after {
+    background-image: url(../imgs/y-plus.png);
+  }
+  .accordion-button-3:not(.collapsed)::after {
+    background-image: url(../imgs/g-cross.png);
+  }
+  .accordion-button-3::after {
+    background-image: url(../imgs/g-plus.png);
+  }
+  .accordion-button-4:not(.collapsed)::after {
+    background-image: url(../imgs/b-cross.png);
+  }
+  .accordion-button-4::after {
+    background-image: url(../imgs/b-plus.png);
+  }
+  
+  
+  .about-class{
+    text-align: center;
+  }
+  
+  .about-class h3{
+    font-family: 'Schoolbell', cursive;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 3px;
+   color: var(--secondary);
+   margin-bottom: 10px;
 }
+
+.about-class h2{
+    font-family: 'Fredoka', sans-serif;
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--primary);
+    margin: 18px 0;
+}
+
+.about-class p{
+    font-family: 'Fredoka', sans-serif;
+    margin: 15px 0;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .swiper-button-next{
+    font-size: 40px;
+    right: 0;
+ }
+ .swiper-button-prev{
+    font-size: 40px;
+    left: 0;
+ }
+  
 
 
 .teachers{
@@ -660,9 +899,8 @@ margin: 15px 0;
 
 
 .last-social li:hover a{
-    transform: rotateY('180deg');
+    transform: translateY('180dg');
 }
-
 .last-social li a i{
     color: #fff;
     display: inline-block;
