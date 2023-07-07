@@ -7,8 +7,14 @@
     --coral: #FF6666;
 }
 
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .primary-nav{
     background-color: var(--primary);
+    
 }
 
 .contact-details{
@@ -16,7 +22,8 @@
 }
 
 .contact-details li{
-    margin-right: 34px;
+  margin-right: 22px;
+  
 }
 
 .contact-details li a{
@@ -30,6 +37,11 @@
     color: var(--yellow);
     font-size: 18px;
     font-weight: bold;
+}
+
+.contact-details li a:hover{
+    color: var(--secondary);
+    transition:ease-in-out;
 }
 
 .social-links{
@@ -50,7 +62,7 @@
     transform: rotateY('180deg');
 }
 
-.social-links li a{
+.social-links li a {
     color: #fff;
     display: inline-block;
     padding: 6px 10px;
@@ -203,6 +215,7 @@
     background-position: center;
     background-size: cover;
     height: 756px;
+   
 }
 
 .hero-wrapper .hero-content h3{
@@ -473,6 +486,28 @@ margin: 15px 0;
     letter-spacing: 2px;
 }
 
+.kids-content img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 68px;
+    animation-name: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+}
+
+@keyframes alternate {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+
 .activity-wrapper{
     display: flex;
     flex-direction: column;
@@ -701,6 +736,30 @@ margin: 15px 0;
     margin: 15px 0;
 }
 
+.about-class img{
+    
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 68px;
+        animation-name: alternate;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 0s;
+    }
+    
+    @keyframes alternate {
+        0% {
+            transform: translateX(-50%);
+        }
+    
+        100% {
+            transform: translateX(50%);
+        }
+    }
+    
+
+
 
 .swiper {
     width: 100%;
@@ -732,6 +791,34 @@ margin: 15px 0;
     font-size: 40px;
     left: 0;
  }
+
+ .user_avatar {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .user_avatar li {
+    margin-right: 1rem;
+  }
+
+  .user_avatar li a{
+    color: #1ab9ff;
+    font-size: 16px;
+  }
+
+  .item_date {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 6px 20px;
+    border: 2px solid #dfac11;
+    border-radius: 15px;
+    background-color: #ffc000;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+  }
   
 
 
@@ -762,6 +849,28 @@ margin: 15px 0;
     font-family: 'Fredoka', sans-serif;
     margin: 15px 0;
 }
+
+.about-teachers img{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 68px;
+    animation-name: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+}
+
+@keyframes alternate {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(50%);
+    }
+}
+
 
 .teacher-links{
     list-style-type: none;
@@ -842,6 +951,71 @@ margin: 15px 0;
     transform: translateY(-20px);
 }
 
+.vlog{
+    text-align: center;
+}
+
+.vlog h5{
+    font-family: 'Schoolbell', cursive;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 3px;
+   color: var(--secondary);
+   margin-bottom: 10px;
+}
+
+.vlog h2{
+    font-family: 'Fredoka', sans-serif;
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--primary);
+    margin: 18px 0;
+    
+}
+
+.vlog p{
+    font-family: 'Fredoka', sans-serif;
+    margin: 18px 0;
+
+    font-size: 16px;
+    
+}
+
+
+
+.vlog img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 68px;
+    animation-name: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+}
+
+@keyframes alternate {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .cover{
     background-color: #fcf9f4;
@@ -889,6 +1063,7 @@ margin: 15px 0;
 
 .enroll-c:hover{
    background-color: var(--secondary);
+   
 }
 
 
@@ -901,13 +1076,31 @@ margin: 15px 0;
 .last-social li:hover a{
     transform: translateY('180dg');
 }
-.last-social li a i{
+
+.lstprt .last-social li{
+    border-radius: 50%;
+    margin: 14px;
+}
+.lstprt .last-social li a i{
     color: #fff;
     display: inline-block;
-    padding: 6px 6px;
+    padding: 6px 10px;
+   
 
 }
 
+.last-social li:first-child{
+    background-color: var(--blue);
+}
+.last-social li:nth-child(2){
+    background-color: var(--yellow);
+}
+.last-social li:nth-child(3){
+    background-color: var(--secondary);
+}
+.last-social li:nth-child(4){
+    background-color: var(--green);
+}
 
 
 .lstprt ul img{
@@ -951,40 +1144,41 @@ margin: 15px 0;
     padding: 10px 0;
 }
 
-.mail h5{
+.mail form input{
     color: var(--black);
     text-transform: capitalize;
     font-size: 15px;
     display: inline-block;
     border-radius: 10px;
     background-color: #fff;
-    padding: 0 15px;
+    padding: 0 22px;
     line-height: 48px;
     width: 100%;
     text-align: start;
     margin-bottom: 10px;
 }
 
-.button5 {
-    color: #fff;
-    display: inline-block;
-    text-transform: capitalize;
-    text-decoration: none;
-    font-size: 16px;
-    transition: .4s all ease-in-out;
-    font-weight: bold;
-    border-radius: 10px;
-    background-color: var(--coral);
-    padding: 0 15px;
-    line-height: 48px;
+
+.mail button{
     width: 100%;
-    text-align: center;
+    padding: 12px;
+    display: block;
+    border-radius: 8px;
+    color: white;
+
+    outline: none;
+    border: none;
+    background-color: var(--secondary);
+    font-weight: bold;
+    transition: all .5s ease;
 }
 
-.button5:hover{
+.mail button:hover{
     background-color: #fff;
     color: black;
 }
+
+
 
 .last-footer{
     background-color: #4054b2;
@@ -1004,6 +1198,135 @@ margin: 15px 0;
 }
 
 
+/* // `xs` returns only a ruleset and no media query */
+/* // ... { ... } */
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+     .contact-details {
+        display: none !important;
+      }
+
+      .hero-wrapper{
+        width: 556px;
+      }
+
+      .hero-content{
+        display: none;
+      }
+
+     .top-heading{
+        display: none;
+     }
+
+   .img-2 img{
+    display: none;
+   }
+
+   .plane img{
+    display: none;
+   }
+
+   .kids-content h5{
+    font-size: 12px;
+   }
+
+   .kids-content h2{
+    font-size: 16px;
+   }
+
+   .kids-content p{
+    font-size: 9px;
+   }
+   
+   .activity-content{
+    display: none;
+   }
+
+   .activity-badge{
+    display: none;
+   }
+
+   .pro-bg{
+    display: none !important;
+   }
+
+   .program .content{
+    width: 100%;
+   }
+
+   .imgs-sec{
+    font-size: 45px;
+    margin: 8px;
+   }
+
+   .kindori-inner img{
+    font-size: 18px !important;
+   }
+
+     .lstprt img{
+        width: 78% !important;
+     }
+    
+     .lstprt li{
+        font-size: 14px !important;
+     }
+     
+    .card{
+        margin: 8px;
+    }
+     
+   
+  }
+ 
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+ }
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+ }
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+
+ }
 
 
 
+
+ /* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+ }
